@@ -1,0 +1,73 @@
+$text-styles: (
+  title: (
+    1: (
+      size: 28px,
+      family: 'Cormorant',
+      style: normal,
+      weight: 700,
+      height: normal,
+    ),
+    2: (
+      size: 20px,
+      family: 'Cormorant',
+      style: normal,
+      weight: 700,
+      height: normal,
+    ),
+  ),
+  sub-title: (
+    1: (
+      size: 20px,
+      family: 'Cormorant',
+      style: normal,
+      weight: 400,
+      height: normal,
+    ),
+  ),
+  text: (
+    1: (
+      size: 16px,
+      family: 'Roboto Mono',
+      style: normal,
+      weight: 400,
+      height: normal,
+    ),
+    2: (
+      size: 16px,
+      family: 'Roboto Mono',
+      style: normal,
+      weight: 400,
+      height: normal,
+    ),
+    3: (
+      size: 24px,
+      family: 'Cormorant',
+      style: normal,
+      weight: 500,
+      height: normal,
+    ),
+  ),
+);
+
+@mixin text($type, $size) {
+  font: get-text-style($type, $size);
+}
+
+@function get-text-style($type, $size) {
+  @if  map-has-key($text-styles, $type) {
+    $value: map.get($text-styles, $type);
+
+    @if  map-has-key($value, $size) {
+      $settings: map.get($value, $size);
+      $font-size: map.get($settings, size);
+      $line-height: map.get($settings, height);
+      $family: map.get($settings, family);
+      $style: map.get($settings, style);
+      $weight: map.get($settings, weight);
+
+      @return $weight $style #{$font-size}/#{$line-height} $family, sans-serif;
+    }
+  }
+
+  @return null;
+}

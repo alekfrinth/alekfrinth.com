@@ -1,0 +1,23 @@
+@import '../../assets/styles/abstracts/texts';
+
+.header {
+  padding-right: 150px;
+  display: flex;
+
+  .language {
+    margin-left: auto;
+    margin-right: 0;
+
+    @include text(text, 3);
+
+    background-color: var(--color-black);
+    color: var(--color-white);
+    height: 35px;
+    padding: 4px 20px;
+    text-decoration: none;
+  }
+
+  .home {
+    margin: 40px 0 0 40px;
+  }
+}
