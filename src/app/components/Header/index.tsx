@@ -1,6 +1,8 @@
 'use client';
+
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+
 import { languages } from '@/app/i18n/settings';
 
 import HomeSVG from '@/app/assets/icons/home.svg';

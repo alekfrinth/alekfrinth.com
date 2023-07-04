@@ -1,12 +1,19 @@
 {
-    "arrowParens": "avoid",
-    "bracketSpacing": true,
-    "jsxSingleQuote": false,
-    "printWidth": 80,
-    "quoteProps": "as-needed",
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "es5",
-    "useTabs": false
-  }
-  
+  "arrowParens": "avoid",
+  "bracketSpacing": true,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "quoteProps": "as-needed",
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "importOrder": [
+    "^@/app/components/(.*)$",
+    "^@/app/i18n/(.*)$",
+    "^@/app/assets/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}

@@ -1,9 +1,9 @@
-import Link from 'next/link';
-import { useTranslation } from '../i18n';
-import Header from '../components/Header';
+import { useTranslation } from '@/app/i18n';
+
+import Header from '@/app/components/Header';
 
 const Home = async ({ params: { lng } }: { params: { lng: string } }) => {
-  const { t } = await useTranslation(lng);
+  const { t } = await useTranslation(lng, 'common');
 
   return (
     <>
@@ -13,12 +13,3 @@ const Home = async ({ params: { lng } }: { params: { lng: string } }) => {
 };
 
 export default Home;
-
-// export const getStaticProps = () => {
-//   const { locales } = i18nextConfig.i18n;
-//   return {
-//     props: {
-//       locales,
-//     },
-//   };
-// };
