@@ -1,0 +1,44 @@
+@import '../../assets/styles/abstracts/texts';
+
+.footer {
+  display: flex;
+  background-color: var(--color-black);
+  height: 322px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  span {
+    @include text(sub-title, 1);
+
+    color: var(--color-white);
+  }
+
+  .mail {
+    height: 50px;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .description {
+    height: 100px;
+    margin-top: auto;
+    padding: 30px;
+  }
+
+  .social {
+    margin: 11px;
+    color: var(--color-white);
+  }
+
+  .contacts {
+    height: 100px;
+    margin-top: auto;
+  }
+
+  .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
