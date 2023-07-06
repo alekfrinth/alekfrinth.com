@@ -3,7 +3,8 @@
 .footer {
   display: flex;
   background-color: var(--color-black);
-  height: 322px;
+  height: 30%;
+  max-height: 320px;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -15,13 +16,11 @@
   }
 
   .mail {
-    height: 50px;
     align-items: center;
     padding: 20px;
   }
 
   .description {
-    height: 100px;
     margin-top: auto;
     padding: 30px;
   }
@@ -31,8 +30,11 @@
     color: var(--color-white);
   }
 
+  .social-container {
+    padding: 20px 0 0;
+  }
+
   .contacts {
-    height: 100px;
     margin-top: auto;
   }
 
