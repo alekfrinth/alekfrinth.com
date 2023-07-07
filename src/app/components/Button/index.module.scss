@@ -1,0 +1,61 @@
+@import '@/app/assets/styles/abstracts';
+
+.wrapper {
+  position: relative;
+}
+
+.shadow {
+  background-image: url('../../assets/images/shadow.png');
+  display: block;
+  height: 0;
+  left: 55%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: all 0.2s ease-in-out;
+  width: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.button {
+  @include text(text, 3);
+
+  padding: 10px 20px;
+  color: var(--color-white);
+  background-color: var(--color-gray-dark);
+  border-style: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  width: 100%;
+
+  &--secondary {
+    opacity: 0.5;
+  }
+
+  &--tertiary {
+    opacity: 0.1;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &:hover:not(:disabled) {
+    background: linear-gradient(90deg, #dcdcdc 0%, rgb(217 217 217 / 0%) 100%);
+    background-color: var(--color-white);
+    color: var(--color-gray-dark);
+
+    & + .shadow {
+      width: 48%;
+      height: calc(100% + 18px);
+      right: -1%;
+      top: -9px;
+      bottom: auto;
+    }
+  }
+}
