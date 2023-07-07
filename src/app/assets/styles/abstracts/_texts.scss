@@ -54,10 +54,10 @@ $text-styles: (
 }
 
 @function get-text-style($type, $size) {
-  @if  map-has-key($text-styles, $type) {
+  @if map-has-key($text-styles, $type) {
     $value: map.get($text-styles, $type);
 
-    @if  map-has-key($value, $size) {
+    @if map-has-key($value, $size) {
       $settings: map.get($value, $size);
       $font-size: map.get($settings, size);
       $line-height: map.get($settings, height);
@@ -65,7 +65,7 @@ $text-styles: (
       $style: map.get($settings, style);
       $weight: map.get($settings, weight);
 
-      @return $weight $style #{$font-size}/#{$line-height} $family, sans-serif;
+      @return $weight $style #{$font-size}/#{$line-height} $family;
     }
   }
 
