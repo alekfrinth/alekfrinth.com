@@ -1,0 +1,52 @@
+@import '../../assets/styles/abstracts/texts';
+
+.footer {
+  display: flex;
+  background-color: var(--color-black);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 19px;
+
+  span {
+    @include text(sub-title, 1);
+
+    color: var(--color-white);
+  }
+
+  .mail {
+    align-items: center;
+    padding: 20px;
+  }
+
+  .description {
+    margin-top: auto;
+    padding: 15px;
+  }
+
+  .social {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: var(--color-white);
+    display: inline-block;
+  }
+
+  .social-icon {
+    height: 42px;
+    width: 42px;
+  }
+
+  .social-container {
+    padding: 20px 0 0;
+  }
+
+  .contacts {
+    margin: 50px;
+  }
+
+  .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}

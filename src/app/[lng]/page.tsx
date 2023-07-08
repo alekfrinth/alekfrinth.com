@@ -2,6 +2,7 @@ import { useTranslation } from '@/app/i18n';
 import Link from 'next/link';
 
 import Button from '@/app/components/Button';
+import Footer from '@/app/components/Footer';
 import Header from '@/app/components/Header';
 
 import styles from './index.module.scss';
@@ -12,6 +13,7 @@ const Home = async ({ params: { lng } }: { params: { lng: string } }) => {
   return (
     <>
       <Header lng={lng} />
+
       <main className={styles.main}>
         <Link href={`/${lng}/freedom-body`} className={styles.button}>
           <Button>{t('body-freedom')}</Button>
@@ -23,6 +25,7 @@ const Home = async ({ params: { lng } }: { params: { lng: string } }) => {
           {t('in-progress')}
         </Button>
       </main>
+      <Footer />
     </>
   );
 };
