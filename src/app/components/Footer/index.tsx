@@ -20,28 +20,28 @@ const Footer = () => {
               className={styles.social}
               target="_blank"
             >
-              <InstagramSVG width="42px" height="42px" />
+              <InstagramSVG className={styles['social-icon']} />
             </Link>
             <Link
               href="https://twitter.com/AlekFrinth"
               className={styles.social}
               target="_blank"
             >
-              <TwitterSVG width="42px" height="42px" />
+              <TwitterSVG className={styles['social-icon']} />
             </Link>
             <Link
               href="https://www.tiktok.com/@alekfrinth"
               className={styles.social}
               target="_blank"
             >
-              <TikTokSVG width="42px" height="42px" />
+              <TikTokSVG className={styles['social-icon']} />
             </Link>
             <Link
               href="https://www.youtube.com/channel/UCf_eyFlSKYJD1-uJQrNqUKg/featured"
               className={styles.social}
               target="_blank"
             >
-              <YoutubeSVG width="42px" height="42px" />
+              <YoutubeSVG className={styles['social-icon']} />
             </Link>
           </div>
           <div className={styles.mail}>
