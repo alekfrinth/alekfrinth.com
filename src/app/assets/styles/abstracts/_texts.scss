@@ -71,7 +71,7 @@ $text-styles: (
       $style: map.get($settings, style);
       $weight: map.get($settings, weight);
 
-      @return $weight $style #{$font-size}/#{$line-height} $family, sans-serif;
+      @return $weight $style #{$font-size}/#{$line-height} $family;
     }
   }
 

@@ -3,17 +3,21 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+import Button from '@/app/components/Button';
+
 import { languages } from '@/app/i18n/settings';
 
 import HomeSVG from '@/app/assets/icons/home.svg';
 
 import styles from './index.module.scss';
 
+const LANGUAGE_PREFIX_LENGTH = 3;
+
 const Header = ({ lng }: { lng: string }) => {
   const pathname = usePathname();
 
   const availableLanguage = languages.find(language => language !== lng);
-  const isHomeLinkVisible = pathname.length > 3;
+  const isHomeLinkVisible = pathname.length > LANGUAGE_PREFIX_LENGTH;
 
   return (
     <header className={styles.header}>
@@ -23,10 +27,12 @@ const Header = ({ lng }: { lng: string }) => {
         </Link>
       )}
       <Link
-        href={`/${availableLanguage}/${pathname.slice(3)}`}
+        href={`/${availableLanguage}/${pathname.slice(LANGUAGE_PREFIX_LENGTH)}`}
         className={styles.language}
       >
-        {availableLanguage}
+        <Button type="button" className={styles.button}>
+          {availableLanguage}
+        </Button>
       </Link>
     </header>
   );

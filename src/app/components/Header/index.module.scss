@@ -1,23 +1,42 @@
-@import '../../assets/styles/abstracts/texts';
+@import '@/app/assets/styles/abstracts/texts';
 
 .header {
   padding-right: 150px;
   display: flex;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 
   .language {
     margin-left: auto;
     margin-right: 0;
-
-    @include text(text, 3);
-
-    background-color: var(--color-black);
-    color: var(--color-white);
-    height: 35px;
-    padding: 4px 20px;
     text-decoration: none;
+
+    button {
+      padding: 5px 12px;
+    }
   }
 
   .home {
     margin: 40px 0 0 40px;
+    color: var(--color-gray-dark);
+
+    path {
+      transition: fill 0.2s ease-in-out;
+      fill: var(--color-white);
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      path {
+        fill: var(--color-gray-dark);
+      }
+    }
   }
 }
