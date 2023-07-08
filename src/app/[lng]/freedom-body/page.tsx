@@ -1,5 +1,6 @@
 import { useTranslation } from '@/app/i18n';
 
+import Authors from '@/app/components/Authors';
 import BodySection from '@/app/components/BodySection';
 import MoreThanYearSection from '@/app/components/MoreThanYearSection';
 import PaintSection from '@/app/components/PaintSection';
@@ -35,6 +36,7 @@ const FreedomBody = async ({
         <PaintingsPart2 lng={lng} />
         <MoreThanYearSection lng={lng} />
         <PaintingsPart3 lng={lng} />
+        <Authors lng={lng} />
         <p className={styles.report}>{t('wait-for-report')}</p>
       </main>
 

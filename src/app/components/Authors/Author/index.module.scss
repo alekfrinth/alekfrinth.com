@@ -1,0 +1,42 @@
+@import '@/app/assets/styles/abstracts';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include container;
+
+  .name {
+    margin-top: 20px;
+
+    @include text(title, 2);
+  }
+
+  .job {
+    margin-top: 10px;
+
+    @include text(text, 1);
+  }
+
+  .social {
+    margin-top: 20px;
+
+    .email {
+      @include text(sub-title, 1);
+    }
+
+    .social-icons-container {
+      padding: 10px 0 0;
+      display: grid;
+      grid-column-gap: 10px;
+      grid-template-columns: repeat(5, 25px);
+
+      .social-icon {
+        color: var(--color-white);
+        height: 25px;
+        width: 25px;
+      }
+    }
+  }
+}
