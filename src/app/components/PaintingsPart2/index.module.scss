@@ -1,0 +1,37 @@
+@import '@/app/assets/styles/abstracts';
+
+.container {
+  display: flex;
+  gap: 97px;
+  padding: 130px 248px 110px 116px;
+
+  @include container;
+
+  .paintings {
+    padding: 58px 94px 95px 98px;
+    width: 100%;
+    max-width: 425px;
+  }
+
+  .description {
+    @include text(text, 1);
+
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+
+    span {
+      display: block;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 30px;
+  }
+}

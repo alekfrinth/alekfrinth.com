@@ -1,0 +1,47 @@
+@import '@/app/assets/styles/abstracts';
+
+.container {
+  @include container;
+
+  padding-left: 150px;
+  display: grid;
+  grid-template-columns: 1fr 540px;
+  margin-bottom: 50px;
+
+  p {
+    @include text(text, 1);
+
+    margin-top: 110px;
+    height: max-content;
+  }
+
+  .more {
+    background-color: var(--color-gray-dark);
+    color: var(--color-white);
+    padding: 98px 110px 130px;
+  }
+
+  .body {
+    position: relative;
+    padding-top: 475px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 165px;
+      height: 1px;
+      background-color: var(--color-gray-dark);
+      z-index: -1;
+    }
+  }
+}
+
+.images {
+  display: flex;
+
+  @include container;
+}
