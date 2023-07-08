@@ -1,4 +1,4 @@
-@import '@/app/assets/styles/abstracts/texts';
+@import '@/app/assets/styles/abstracts';
 
 .header {
   padding-right: 150px;
@@ -8,9 +8,8 @@
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
+
+  @include container;
 
   .language {
     margin-left: auto;

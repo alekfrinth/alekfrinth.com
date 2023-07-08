@@ -1,0 +1,47 @@
+.wrapper {
+  $lines-offset: 32px;
+
+  border: $lines-offset solid transparent;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    width: calc(100% + $lines-offset);
+    height: calc(100% + $lines-offset);
+    border: 2px solid black;
+    border-right-width: 0;
+    position: absolute;
+  }
+
+  &::after {
+    top: 0;
+    left: 0;
+  }
+
+  &::before {
+    top: -$lines-offset;
+    left: -$lines-offset;
+  }
+
+  &--left {
+    &::before,
+    &::after {
+      border-right-width: 2px;
+      border-left-width: 0;
+    }
+
+    &::after {
+      top: 0;
+      right: 0;
+      left: auto;
+    }
+
+    &::before {
+      top: -$lines-offset;
+      right: -$lines-offset;
+      left: auto;
+    }
+  }
+}

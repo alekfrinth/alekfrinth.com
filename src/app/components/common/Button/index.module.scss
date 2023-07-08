@@ -5,7 +5,7 @@
 }
 
 .shadow {
-  background-image: url('../../assets/images/shadow.png');
+  background-image: url('../../../assets/images/shadow.png');
   display: block;
   height: 0;
   left: 55%;
@@ -20,7 +20,7 @@
 }
 
 .button {
-  @include text(text, 3);
+  @include text(text, 2);
 
   padding: 10px 20px;
   color: var(--color-white);
