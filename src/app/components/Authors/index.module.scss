@@ -1,0 +1,23 @@
+@import '@/app/assets/styles/abstracts';
+
+.container {
+  background-color: var(--color-gray-dark);
+  color: var(--color-white);
+  padding: 110px 195px 130px;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+
+  .worked-by {
+    @include text(title, 1);
+
+    padding: 0 30px 80px;
+  }
+
+  .authors-container {
+    display: grid;
+    grid-template-columns: repeat(3, 230px);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 80px 60px;
+  }
+}
