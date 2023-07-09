@@ -18,64 +18,66 @@ type Props = {
   authorData: AuthorData;
 };
 
-const Author = async ({ lng, authorData }: Props) => {
+const Author = async ({ lng, authorData: { data, imageUrl } }: Props) => {
   const { t } = await useTranslation(lng, 'common');
 
   return (
     <div className={styles.container}>
       <Image
-        src={authorData.imageUrl}
-        alt={t(authorData.data.name)}
+        src={imageUrl}
+        alt={t(data.name)}
         width={165}
         height={215}
         className={styles.image}
       />
-      <p className={styles.name}>{t(authorData.data.name)}</p>
-      <p className={styles.job}>{t(authorData.data.job)}</p>
+      <p className={styles.name}>{t(data.name)}</p>
+      <p className={styles.job}>{t(data.job)}</p>
       <div className={styles.social}>
-        {authorData.data.email && (
-          <p className={styles.email}>{authorData.data.email}</p>
+        {data.email && (
+          <p className={styles.email}>
+            <a href={`mailto: ${data.email}`}>{data.email}</a>
+          </p>
         )}
         <div className={styles['social-icons-container']}>
-          {authorData.data.links.instagram && (
+          {data.links.instagram && (
             <Link
-              href={authorData.data.links.instagram}
+              href={data.links.instagram}
               className={styles['social-icon']}
               target="_blank"
             >
               <InstagramSVG className={styles['social-icon']} />
             </Link>
           )}
-          {authorData.data.links.twitter && (
+          {data.links.twitter && (
             <Link
-              href={authorData.data.links.twitter}
+              href={data.links.twitter}
               className={styles['social-icon']}
               target="_blank"
             >
               <TwitterSVG className={styles['social-icon']} />
             </Link>
           )}
-          {authorData.data.links.tiktok && (
+          {data.links.tiktok && (
             <Link
-              href={authorData.data.links.tiktok}
+              href={data.links.tiktok}
               className={styles['social-icon']}
               target="_blank"
             >
               <TikTokSVG className={styles['social-icon']} />
             </Link>
           )}
-          {authorData.data.links.youtube && (
+          {data.links.youtube && (
             <Link
-              href={authorData.data.links.youtube}
+              href={data.links.youtube}
               className={styles['social-icon']}
               target="_blank"
             >
               <YoutubeSVG className={styles['social-icon']} />
             </Link>
           )}
-          {authorData.data.links.telegram && (
+          {data.links.telegram && (
             <Link
-              href={authorData.data.links.telegram}
+              href={data.links.telegram}
               className={styles['social-icon']}
               target="_blank"
             >

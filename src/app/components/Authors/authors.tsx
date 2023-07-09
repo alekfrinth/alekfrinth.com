@@ -8,13 +8,13 @@ export type AuthorData = {
   data: {
     name: string;
     job: string;
-    email?: string | null | undefined;
+    email?: string;
     links: {
-      instagram?: string | null | undefined;
-      twitter?: string | null | undefined;
-      tiktok?: string | null | undefined;
-      youtube?: string | null | undefined;
-      telegram?: string | null | undefined;
+      instagram?: string;
+      twitter?: string;
+      tiktok?: string;
+      youtube?: string;
+      telegram?: string;
     };
   };
 };
@@ -27,7 +27,7 @@ export const authors: AuthorData[] = [
       job: 'alek-frinth-job',
       email: 'alekfrinth@gmail.com',
       links: {
-        instagram: 'https://www.instagram.com/alekfrinth/',
+        instagram: 'http://instagram.com/_u/alekfrinth/',
         twitter: 'https://twitter.com/AlekFrinth',
         tiktok: 'https://www.tiktok.com/@alekfrinth',
         youtube:
@@ -41,7 +41,7 @@ export const authors: AuthorData[] = [
       name: 'anastasia-karooka-name',
       job: 'anastasia-karooka-job',
       links: {
-        instagram: 'https://www.instagram.com/anastasiyafr/',
+        instagram: 'http://instagram.com/_u/anastasiyafr/',
         twitter: 'https://twitter.com/RG_Simple',
       },
     },
@@ -52,7 +52,7 @@ export const authors: AuthorData[] = [
       name: 'katerina-anonimna-name',
       job: 'katerina-anonimna-job',
       links: {
-        instagram: 'https://www.instagram.com/katusha0211/',
+        instagram: 'http://instagram.com/_u/katusha0211/',
       },
     },
   },
@@ -63,7 +63,7 @@ export const authors: AuthorData[] = [
       job: 'oleksandr-hrebeniuk-job',
       email: 'alex.grebenuk@gmail.com',
       links: {
-        instagram: 'https://www.instagram.com/oleksandr.hrebeniuk/',
+        instagram: 'http://instagram.com/_u/oleksandr.hrebeniuk/',
         telegram: 'https://t.me/alexsleepwalker',
       },
     },
@@ -75,7 +75,7 @@ export const authors: AuthorData[] = [
       job: 'artem-palamarchuk-job',
       email: 'artvideopalam@gmail.com',
       links: {
-        instagram: 'https://www.instagram.com/artpalam/',
+        instagram: 'http://instagram.com/_u/artpalam/',
         telegram: 't.me/artpalam',
       },
     },

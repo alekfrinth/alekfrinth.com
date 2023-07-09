@@ -24,6 +24,11 @@
 
     .email {
       @include text(sub-title, 1);
+
+      a {
+        color: var(--color-white);
+        text-decoration: none;
+      }
     }
 
     .social-icons-container {
