@@ -27,6 +27,15 @@ body {
   --color-black: #141414;
   --color-gray: #4e4e4e;
   --color-gray-dark: #2b2b2b;
+
+  /*
+  * Gradients
+  */
+  --linear-gradient-button: linear-gradient(
+    90deg,
+    #dcdcdc 0%,
+    rgb(217 217 217 / 0%) 100%
+  );
 }
 
 ul {

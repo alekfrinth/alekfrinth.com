@@ -31,12 +31,12 @@ const PaintingsPart3 = async ({ lng }: Props) => {
       <PaintingDescriptionWrapper className={styles.paintings}>
         <p className={styles.description}>
           <span>{t('canvas-no', { number: 7 })}</span>
-          <span>{t('cm', { size: '30x60' })}</span>
+          <span>{t('cm', { size: '60x30' })}</span>
           <span>{t('acrylic')}</span>
         </p>
         <p className={styles.description}>
           <span>{t('canvas-no', { number: 8 })}</span>
-          <span>{t('cm', { size: '60x30' })}</span>
+          <span>{t('cm', { size: '30x60' })}</span>
           <span>{t('acrylic')}</span>
         </p>
       </PaintingDescriptionWrapper>

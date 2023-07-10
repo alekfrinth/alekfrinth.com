@@ -13,15 +13,12 @@ const Button = ({
   ...props
 }: ButtonProps) => {
   return (
-    <div className={cn(styles.wrapper, className)}>
-      <button
-        className={cn(styles.button, styles[`button--${color}`])}
-        {...props}
-      >
-        {children}
-      </button>
-      <span className={styles.shadow} />
-    </div>
+    <button
+      className={cn(styles.button, className, styles[`button--${color}`])}
+      {...props}
+    >
+      {children}
+    </button>
   );
 };
 
