@@ -11,7 +11,7 @@ const YoutubeVideo = ({ className }: Props) => {
 
   useEffect(() => {
     if (ref.current) {
-      ref.current.src = `https://www.youtube.com/embed/ksxNlmAwAZA?enablejsapi=1&origin=${window.location.origin}`;
+      ref.current.src = `https://www.youtube.com/embed/qN_BnqEvLK0?enablejsapi=1&origin=${window.location.origin}`;
     }
   });
 

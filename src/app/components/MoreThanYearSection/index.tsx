@@ -1,6 +1,11 @@
 import { useTranslation } from '@/app/i18n';
 import Image from 'next/image';
 
+import Info_2_Photo_1 from '@/app/assets/images/photos/Info_2_Photo_1.png';
+import Info_2_Photo_2 from '@/app/assets/images/photos/Info_2_Photo_2.png';
+import Info_2_Photo_3 from '@/app/assets/images/photos/Info_2_Photo_3.png';
+import Info_2_Photo_4 from '@/app/assets/images/photos/Info_2_Photo_4.png';
+
 import styles from './index.module.scss';
 
 type Props = {
@@ -15,7 +20,7 @@ const MoreThanYearSection = async ({ lng }: Props) => {
       <div className={styles.container}>
         <p className={styles.more}>{t('more-than-year')}</p>
         <Image
-          src="https://images.unsplash.com/photo-1581439645268-ea7bbe6bd091?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=654&q=80"
+          src={Info_2_Photo_1}
           alt={t('painting-1')}
           width={540}
           height={810}
@@ -24,7 +29,7 @@ const MoreThanYearSection = async ({ lng }: Props) => {
 
         <p className={styles.body}>{t('body-freedom-is')}</p>
         <Image
-          src="https://images.unsplash.com/photo-1552559789-c57c0a79a8cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+          src={Info_2_Photo_2}
           alt={t('painting-1')}
           width={540}
           height={810}
@@ -33,14 +38,14 @@ const MoreThanYearSection = async ({ lng }: Props) => {
       </div>
       <div className={styles.images}>
         <Image
-          src="https://images.unsplash.com/photo-1571037697753-e796f324bbd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2055&q=80"
+          src={Info_2_Photo_3}
           alt={t('painting-1')}
           width={720}
           height={480}
           style={{ objectFit: 'cover' }}
         />
         <Image
-          src="https://images.unsplash.com/photo-1600016326108-40b24ee22cd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          src={Info_2_Photo_4}
           alt={t('painting-1')}
           width={720}
           height={480}
