@@ -3,6 +3,9 @@ import Image from 'next/image';
 
 import PaintingDescriptionWrapper from '@/app/components/common/PaintingDescriptionWrapper';
 
+import Painting_7 from '@/app/assets/images/paintings/Painting_7.png';
+import Painting_8 from '@/app/assets/images/paintings/Painting_8.png';
+
 import styles from './index.module.scss';
 
 type Props = {
@@ -15,14 +18,14 @@ const PaintingsPart3 = async ({ lng }: Props) => {
   return (
     <div className={styles.container}>
       <Image
-        src="https://images.unsplash.com/photo-1557215121-f6da31003be7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        src={Painting_7}
         alt="painting"
         width={425}
         height={195}
         style={{ objectFit: 'cover' }}
       />
       <Image
-        src="https://images.unsplash.com/photo-1620891549027-942fdc95d3f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+        src={Painting_8}
         alt="painting"
         width={195}
         height={425}

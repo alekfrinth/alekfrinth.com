@@ -2,6 +2,7 @@ import { StaticImageData } from 'next/image';
 
 import AlekPhoto from '@/app/assets/images/authors/alekfrinth.png';
 import DefaultPhoto from '@/app/assets/images/authors/default.png';
+import OleksandrHrebeniukPhoto from '@/app/assets/images/authors/oleksandrhrebeniuk.png';
 
 export type AuthorData = {
   imageUrl: string | StaticImageData;
@@ -57,7 +58,7 @@ export const authors: AuthorData[] = [
     },
   },
   {
-    imageUrl: DefaultPhoto,
+    imageUrl: OleksandrHrebeniukPhoto,
     data: {
       name: 'oleksandr-hrebeniuk-name',
       job: 'oleksandr-hrebeniuk-job',

@@ -3,6 +3,10 @@ import Image from 'next/image';
 
 import PaintingDescriptionWrapper from '@/app/components/common/PaintingDescriptionWrapper';
 
+import Painting_4 from '@/app/assets/images/paintings/Painting_4.png';
+import Painting_5 from '@/app/assets/images/paintings/Painting_5.png';
+import Painting_6 from '@/app/assets/images/paintings/Painting_6.png';
+
 import styles from './index.module.scss';
 
 type Props = {
@@ -32,24 +36,9 @@ const PaintingsPart2 = async ({ lng }: Props) => {
       </PaintingDescriptionWrapper>
 
       <div className={styles.images}>
-        <Image
-          src="https://images.unsplash.com/photo-1618418721668-0d1f72aa4bab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-          alt="painting"
-          width={262}
-          height={188}
-        />
-        <Image
-          src="https://images.unsplash.com/photo-1584902645120-f86567d892b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1625&q=80"
-          alt="painting"
-          width={262}
-          height={188}
-        />
-        <Image
-          src="https://images.unsplash.com/photo-1617654112368-307921291f42?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1013&q=80"
-          alt="painting"
-          width={188}
-          height={262}
-        />
+        <Image src={Painting_4} alt="painting" width={262} height={188} />
+        <Image src={Painting_5} alt="painting" width={262} height={188} />
+        <Image src={Painting_6} alt="painting" width={188} height={262} />
       </div>
     </div>
   );
