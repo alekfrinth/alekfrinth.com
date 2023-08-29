@@ -1,7 +1,8 @@
 import { StaticImageData } from 'next/image';
 
 import AlekPhoto from '@/app/assets/images/authors/alekfrinth.png';
-import DefaultPhoto from '@/app/assets/images/authors/default.png';
+import AnastasiiaKuchmenkoPhoto from '@/app/assets/images/authors/anastasiiakuchmenko.png';
+import ArtemPalamarchukPhoto from '@/app/assets/images/authors/artempalamarchuk.png';
 import OleksandrHrebeniukPhoto from '@/app/assets/images/authors/oleksandrhrebeniuk.png';
 
 export type AuthorData = {
@@ -37,23 +38,13 @@ export const authors: AuthorData[] = [
     },
   },
   {
-    imageUrl: DefaultPhoto,
+    imageUrl: AnastasiiaKuchmenkoPhoto,
     data: {
       name: 'anastasia-karooka-name',
       job: 'anastasia-karooka-job',
       links: {
         instagram: 'http://instagram.com/_u/anastasiyafr/',
         twitter: 'https://twitter.com/RG_Simple',
-      },
-    },
-  },
-  {
-    imageUrl: DefaultPhoto,
-    data: {
-      name: 'katerina-anonimna-name',
-      job: 'katerina-anonimna-job',
-      links: {
-        instagram: 'http://instagram.com/_u/katusha0211/',
       },
     },
   },
@@ -70,7 +61,7 @@ export const authors: AuthorData[] = [
     },
   },
   {
-    imageUrl: DefaultPhoto,
+    imageUrl: ArtemPalamarchukPhoto,
     data: {
       name: 'artem-palamarchuk-name',
       job: 'artem-palamarchuk-job',
