@@ -44,4 +44,11 @@
       left: auto;
     }
   }
+
+  &--no-borders {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
 }

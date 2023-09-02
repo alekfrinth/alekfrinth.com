@@ -33,3 +33,23 @@
     margin: 0 auto;
   }
 }
+
+@media screen and (width <= 768px) {
+  .wrapper {
+    padding: 75px 0 150px;
+    flex-direction: column-reverse;
+    max-width: 414px;
+    margin: 0 auto 150px;
+
+    .image {
+      width: 100%;
+      height: auto;
+    }
+
+    .description {
+      margin-top: 0;
+      padding: 40px 28px 60px 29px;
+      margin-right: 29px;
+    }
+  }
+}

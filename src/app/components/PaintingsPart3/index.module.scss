@@ -31,3 +31,86 @@
     }
   }
 }
+
+.mobile {
+  display: none;
+}
+
+@media screen and (width <= 768px) {
+  .container {
+    flex-direction: column;
+    padding: 75px 0;
+    gap: 35px;
+    align-items: flex-start;
+
+    .paintings {
+      margin-left: 0;
+    }
+
+    .row {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      &:first-of-type {
+        padding-left: 29px;
+
+        .image {
+          width: 250px;
+          height: auto;
+        }
+
+        .paintings {
+          padding-top: 27px;
+          padding-bottom: 0;
+          padding-left: 39px;
+          border-width: 0;
+        }
+      }
+
+      &:nth-of-type(2) {
+        justify-content: flex-end;
+        width: 100%;
+        padding-right: 45px;
+        gap: 22px;
+
+        .image {
+          width: 113px;
+          height: auto;
+        }
+
+        .paintings {
+          min-width: 119px;
+          flex: 0;
+          padding-left: 16px;
+          padding-top: 50px;
+          border-width: 16px;
+          border-right-width: 0;
+          padding-bottom: 45px;
+
+          &::before,
+          &::after {
+            width: calc(100% + 16px);
+          }
+
+          &::before {
+            left: -16px;
+            top: -16px;
+          }
+
+          p {
+            margin-bottom: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+}

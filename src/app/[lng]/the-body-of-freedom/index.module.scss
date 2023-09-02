@@ -20,7 +20,7 @@
     padding-left: 50px;
   }
 
-  p {
+  .text {
     max-width: 555px;
     text-indent: 10px;
     margin-bottom: 200px;
@@ -36,4 +36,38 @@
 .report {
   text-align: center;
   padding: 250px 0;
+}
+
+@media screen and (width <= 768px) {
+  .main {
+    max-width: 414px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding: 270px 30px 75px;
+
+    .text {
+      margin: 0 auto;
+      padding: 0 20px;
+      margin-bottom: 80px;
+      max-width: 100%;
+    }
+
+    h1 {
+      padding-left: 52px;
+      margin-bottom: 50px;
+    }
+
+    .video {
+      height: 200px;
+    }
+  }
+
+  .report {
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 300px 0;
+  }
 }

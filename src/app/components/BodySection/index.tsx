@@ -14,7 +14,13 @@ const BodySection = async ({ lng }: Props) => {
   return (
     <div className={styles.wrapper}>
       <p className={styles.description}>{t('body-is')}</p>
-      <Image src={Info_1_Photo_1} alt="body" width={540} height={810} />
+      <Image
+        src={Info_1_Photo_1}
+        alt="body"
+        width={540}
+        height={810}
+        className={styles.image}
+      />
     </div>
   );
 };

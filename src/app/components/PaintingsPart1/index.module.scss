@@ -47,3 +47,67 @@
   padding-left: 64px;
   padding-top: 56px;
 }
+
+.mobile {
+  display: none;
+}
+
+@media screen and (width <= 768px) {
+  .container {
+    padding: 75px 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content repeat(3, 1fr);
+    grid-row-gap: 35px;
+
+    .description {
+      grid-area: 1 / 1 / 2 / 2;
+      margin-bottom: 30px;
+    }
+
+    .painting-description {
+      padding-left: 16px;
+      padding-top: 50px;
+      border-width: 16px;
+      border-right-width: 0;
+
+      &::before,
+      &::after {
+        width: calc(100% + 16px);
+      }
+
+      &::before {
+        left: -16px;
+        top: -16px;
+      }
+
+      p {
+        margin-bottom: 100px;
+        max-width: 116px;
+      }
+    }
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .row {
+    width: 100%;
+    gap: 20px;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .left-padding {
+    padding-left: 29px;
+    justify-content: flex-start;
+  }
+
+  .right-padding {
+    padding-right: 29px;
+  }
+}

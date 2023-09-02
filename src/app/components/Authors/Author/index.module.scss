@@ -45,3 +45,41 @@
     }
   }
 }
+
+@media screen and (width <= 768px) {
+  .container {
+    flex-direction: row;
+    column-gap: 14px;
+    padding-left: 20px;
+    align-items: stretch;
+
+    .image {
+      width: 121px;
+      height: auto;
+    }
+
+    .description {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .name {
+      margin-top: 0;
+    }
+
+    .job {
+      flex: 1;
+      height: 100%;
+    }
+
+    .social {
+      .email {
+        @include text(sub-title, 2);
+      }
+
+      .social-icons-container {
+        padding-top: 20px;
+      }
+    }
+  }
+}

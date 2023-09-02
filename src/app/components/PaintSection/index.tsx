@@ -1,4 +1,5 @@
 import { useTranslation } from '@/app/i18n';
+import cn from 'classnames';
 import Image from 'next/image';
 import React from 'react';
 
@@ -27,13 +28,22 @@ const PaintSection = async ({ lng }: Props) => {
           className={styles.image}
         />
 
+        <Image
+          src={Info_1_Photo_4}
+          width={720}
+          height={480}
+          alt="body"
+          className={cn(styles.image, styles.mobile)}
+          style={{ objectFit: 'cover' }}
+        />
+
         <p>{t('paint-is')}</p>
         <Image
           src={Info_1_Photo_3}
           alt="body"
           width={540}
           height={810}
-          className={styles.image}
+          className={cn(styles.image, styles.desktop)}
         />
       </div>
       <div className={styles.images}>
@@ -42,8 +52,14 @@ const PaintSection = async ({ lng }: Props) => {
           width={720}
           height={480}
           alt="body"
-          className={styles.image}
-          style={{ objectFit: 'cover' }}
+          className={cn(styles.image, styles.desktop)}
+        />
+        <Image
+          src={Info_1_Photo_3}
+          alt="body"
+          width={540}
+          height={810}
+          className={cn(styles.image, styles.mobile)}
         />
         <Image
           src={Info_1_Photo_5}
@@ -51,7 +67,6 @@ const PaintSection = async ({ lng }: Props) => {
           height={480}
           alt="body"
           className={styles.image}
-          style={{ objectFit: 'cover' }}
         />
       </div>
     </>

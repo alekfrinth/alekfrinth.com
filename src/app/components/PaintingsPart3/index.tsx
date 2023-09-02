@@ -1,4 +1,5 @@
 import { useTranslation } from '@/app/i18n';
+import cn from 'classnames';
 import Image from 'next/image';
 
 import PaintingDescriptionWrapper from '@/app/components/common/PaintingDescriptionWrapper';
@@ -17,21 +18,49 @@ const PaintingsPart3 = async ({ lng }: Props) => {
 
   return (
     <div className={styles.container}>
-      <Image
-        src={Painting_7}
-        alt="painting"
-        width={425}
-        height={195}
-        style={{ objectFit: 'cover' }}
-      />
-      <Image
-        src={Painting_8}
-        alt="painting"
-        width={195}
-        height={425}
-        style={{ objectFit: 'cover' }}
-      />
-      <PaintingDescriptionWrapper className={styles.paintings}>
+      <div className={styles.row}>
+        <Image
+          src={Painting_7}
+          alt="painting"
+          width={425}
+          height={195}
+          className={styles.image}
+        />
+
+        <PaintingDescriptionWrapper
+          className={cn(styles.paintings, styles.mobile)}
+          noBorders
+        >
+          <p className={styles.description}>
+            <span>{t('canvas-no', { number: 7 })}</span>
+            <span>{t('cm', { size: '60x30' })}</span>
+            <span>{t('acrylic')}</span>
+          </p>
+        </PaintingDescriptionWrapper>
+      </div>
+
+      <div className={styles.row}>
+        <Image
+          src={Painting_8}
+          alt="painting"
+          width={195}
+          height={425}
+          className={styles.image}
+        />
+        <PaintingDescriptionWrapper
+          className={cn(styles.paintings, styles.mobile)}
+        >
+          <p className={styles.description}>
+            <span>{t('canvas-no', { number: 8 })}</span>
+            <span>{t('cm', { size: '30x60' })}</span>
+            <span>{t('acrylic')}</span>
+          </p>
+        </PaintingDescriptionWrapper>
+      </div>
+
+      <PaintingDescriptionWrapper
+        className={cn(styles.paintings, styles.desktop)}
+      >
         <p className={styles.description}>
           <span>{t('canvas-no', { number: 7 })}</span>
           <span>{t('cm', { size: '60x30' })}</span>

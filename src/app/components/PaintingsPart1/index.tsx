@@ -1,4 +1,5 @@
 import { useTranslation } from '@/app/i18n';
+import cn from 'classnames';
 import Image from 'next/image';
 
 import Painting_1 from '@/app/assets/images/paintings/Painting_1.png';
@@ -17,8 +18,16 @@ const PaintingsPart1 = async ({ lng }: Props) => {
 
   return (
     <div className={styles.container}>
-      <p className={styles.description}>{t('8-paintings')}</p>
-      <div className={styles.images}>
+      <p
+        className={cn(
+          styles.description,
+          styles['left-padding'],
+          styles['right-padding']
+        )}
+      >
+        {t('8-paintings')}
+      </p>
+      <div className={cn(styles.images, styles.desktop)}>
         <Image
           src={Painting_1}
           alt={t('painting-1')}
@@ -42,7 +51,9 @@ const PaintingsPart1 = async ({ lng }: Props) => {
         />
       </div>
 
-      <PaintingDescriptionWrapper className={styles['painting-description']}>
+      <PaintingDescriptionWrapper
+        className={cn(styles['painting-description'], styles.desktop)}
+      >
         <p className={styles.painting}>
           <span>{t('painting-1')}</span>
           <span>{t('cm', { size: '60x80' })}</span>
@@ -59,6 +70,60 @@ const PaintingsPart1 = async ({ lng }: Props) => {
           <span>{t('acrylic')}</span>
         </p>
       </PaintingDescriptionWrapper>
+
+      <div className={cn(styles.row, styles.mobile, styles['left-padding'])}>
+        <Image
+          src={Painting_1}
+          alt={t('painting-1')}
+          width={202}
+          height={275}
+          style={{ objectFit: 'cover' }}
+        />
+        <PaintingDescriptionWrapper
+          className={cn(styles['painting-description'])}
+        >
+          <p className={styles.painting}>
+            <span>{t('painting-1')}</span>
+            <span>{t('cm', { size: '60x80' })}</span>
+            <span>{t('acrylic')}</span>
+          </p>
+        </PaintingDescriptionWrapper>
+      </div>
+      <div className={cn(styles.row, styles.mobile, styles['right-padding'])}>
+        <PaintingDescriptionWrapper
+          className={cn(styles['painting-description'])}
+          noBorders
+        >
+          <p className={styles.painting}>
+            <span>{t('painting-2')}</span>
+            <span>{t('cm', { size: '60x80' })}</span>
+            <span>{t('acrylic')}</span>
+          </p>
+        </PaintingDescriptionWrapper>
+        <Image
+          src={Painting_2}
+          alt={t('painting-2')}
+          width={202}
+          height={275}
+          style={{ objectFit: 'cover' }}
+        />
+      </div>
+      <div className={cn(styles.row, styles.mobile, styles['left-padding'])}>
+        <Image
+          src={Painting_3}
+          alt={t('painting-3')}
+          width={202}
+          height={275}
+          style={{ objectFit: 'cover' }}
+        />
+        <PaintingDescriptionWrapper className={styles['painting-description']}>
+          <p className={styles.painting}>
+            <span>{t('painting-3')}</span>
+            <span>{t('cm', { size: '60x80' })}</span>
+            <span>{t('acrylic')}</span>
+          </p>
+        </PaintingDescriptionWrapper>
+      </div>
     </div>
   );
 };
