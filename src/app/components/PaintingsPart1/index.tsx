@@ -2,11 +2,12 @@ import { useTranslation } from '@/app/i18n';
 import cn from 'classnames';
 import Image from 'next/image';
 
+import PaintingDescriptionWrapper from '@/app/components/common/PaintingDescriptionWrapper';
+
 import Painting_1 from '@/app/assets/images/paintings/Painting_1.png';
 import Painting_2 from '@/app/assets/images/paintings/Painting_2.png';
 import Painting_3 from '@/app/assets/images/paintings/Painting_3.png';
 
-import PaintingDescriptionWrapper from '../common/PaintingDescriptionWrapper';
 import styles from './index.module.scss';
 
 type Props = {

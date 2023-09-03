@@ -1,21 +1,26 @@
-'use client';
+import Image from 'next/image';
 
-import { useEffect, useRef } from 'react';
+import VideoBackground from '@/app/assets/images/video_button.png';
 
 type Props = {
   className?: string;
 };
 
 const YoutubeVideo = ({ className }: Props) => {
-  const ref = useRef<HTMLIFrameElement>(null);
-
-  useEffect(() => {
-    if (ref.current) {
-      ref.current.src = `https://www.youtube.com/embed/qN_BnqEvLK0?enablejsapi=1&origin=${window.location.origin}`;
-    }
-  });
-
-  return <iframe ref={ref} allowFullScreen className={className} />;
+  return (
+    <a
+      href="https://www.youtube.com/watch?v=qN_BnqEvLK0"
+      target="_blank"
+      className={className}
+    >
+      <Image
+        src={VideoBackground}
+        alt="Youtube Video"
+        width={750}
+        height={422}
+      />
+    </a>
+  );
 };
 
 export default YoutubeVideo;
