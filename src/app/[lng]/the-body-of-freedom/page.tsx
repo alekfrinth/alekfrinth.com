@@ -40,7 +40,7 @@ const FreedomBody = async ({
         <p className={styles.report}>{t('wait-for-report')}</p>
       </main>
 
-      <Footer />
+      <Footer lng={lng} />
     </>
   );
 };
