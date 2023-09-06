@@ -25,7 +25,7 @@ const Home = async ({ params: { lng } }: { params: { lng: string } }) => {
           {t('in-progress')}
         </Button>
       </main>
-      <Footer />
+      <Footer lng={lng} />
     </>
   );
 };
