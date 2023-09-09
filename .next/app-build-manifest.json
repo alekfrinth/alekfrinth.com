@@ -1,0 +1,22 @@
+{
+  "pages": {
+    "/[lng]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[lng]/page.css",
+      "static/chunks/app/[lng]/page.js"
+    ],
+    "/[lng]/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[lng]/layout.css",
+      "static/chunks/app/[lng]/layout.js"
+    ],
+    "/[lng]/the-body-of-freedom/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[lng]/the-body-of-freedom/page.css",
+      "static/chunks/app/[lng]/the-body-of-freedom/page.js"
+    ]
+  }
+}
