@@ -41,49 +41,49 @@ const Author = async ({ lng, authorData: { data, imageUrl } }: Props) => {
           )}
           <div className={styles['social-icons-container']}>
             {data.links.instagram && (
-              <Link
+              <a
                 href={data.links.instagram}
                 className={styles['social-icon']}
                 target="_blank"
               >
                 <InstagramSVG className={styles['social-icon']} />
-              </Link>
+              </a>
             )}
             {data.links.twitter && (
-              <Link
+              <a
                 href={data.links.twitter}
                 className={styles['social-icon']}
                 target="_blank"
               >
                 <TwitterSVG className={styles['social-icon']} />
-              </Link>
+              </a>
             )}
             {data.links.tiktok && (
-              <Link
+              <a
                 href={data.links.tiktok}
                 className={styles['social-icon']}
                 target="_blank"
               >
                 <TikTokSVG className={styles['social-icon']} />
-              </Link>
+              </a>
             )}
             {data.links.youtube && (
-              <Link
+              <a
                 href={data.links.youtube}
                 className={styles['social-icon']}
                 target="_blank"
               >
                 <YoutubeSVG className={styles['social-icon']} />
-              </Link>
+              </a>
             )}
             {data.links.telegram && (
-              <Link
+              <a
                 href={data.links.telegram}
                 className={styles['social-icon']}
                 target="_blank"
               >
                 <TelegramSVG className={styles['social-icon']} />
-              </Link>
+              </a>
             )}
           </div>
         </div>

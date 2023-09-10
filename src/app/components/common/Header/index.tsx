@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import Button from '@/app/components/common/Button';
@@ -22,18 +21,18 @@ const Header = ({ lng }: { lng: string }) => {
   return (
     <header className={styles.header}>
       {isHomeLinkVisible && (
-        <Link href={`/${lng}`} className={styles.home}>
+        <a href={`/${lng}`} className={styles.home}>
           <HomeSVG width="42px" height="42px" />
-        </Link>
+        </a>
       )}
-      <Link
+      <a
         href={`/${availableLanguage}/${pathname.slice(LANGUAGE_PREFIX_LENGTH)}`}
         className={styles.language}
       >
         <Button type="button" className={styles.button}>
           {availableLanguage}
         </Button>
-      </Link>
+      </a>
     </header>
   );
 };

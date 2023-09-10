@@ -67,34 +67,34 @@ const Footer = async ({ lng }: Props) => {
       </ul>
       <div className={styles.contacts}>
         <div className={styles['social-container']}>
-          <Link
+          <a
             href="https://www.instagram.com/alekfrinth/"
             className={styles.social}
             target="_blank"
           >
             <InstagramSVG className={styles['social-icon']} />
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://twitter.com/AlekFrinth"
             className={styles.social}
             target="_blank"
           >
             <TwitterSVG className={styles['social-icon']} />
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://www.tiktok.com/@alekfrinth"
             className={styles.social}
             target="_blank"
           >
             <TikTokSVG className={styles['social-icon']} />
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://www.youtube.com/channel/UCf_eyFlSKYJD1-uJQrNqUKg/featured"
             className={styles.social}
             target="_blank"
           >
             <YoutubeSVG className={styles['social-icon']} />
-          </Link>
+          </a>
         </div>
         <div className={styles.mail}>
           <span>alekfrinth@gmail.com</span>
