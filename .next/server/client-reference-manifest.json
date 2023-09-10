@@ -837,6 +837,14 @@
     }
   },
   "entryCSSFiles": {
+    "/Users/polina/Desktop/WORK/exercise/alekfrinth.com/src/app/[lng]/layout": {
+      "modules": [
+        "/Users/polina/Desktop/WORK/exercise/alekfrinth.com/src/app/assets/styles/index.scss"
+      ],
+      "files": [
+        "static/css/app/[lng]/layout.css"
+      ]
+    },
     "/Users/polina/Desktop/WORK/exercise/alekfrinth.com/src/app/[lng]/page": {
       "modules": [
         "/Users/polina/Desktop/WORK/exercise/alekfrinth.com/src/app/[lng]/index.module.scss",
@@ -846,14 +854,6 @@
       ],
       "files": [
         "static/css/app/[lng]/page.css"
-      ]
-    },
-    "/Users/polina/Desktop/WORK/exercise/alekfrinth.com/src/app/[lng]/layout": {
-      "modules": [
-        "/Users/polina/Desktop/WORK/exercise/alekfrinth.com/src/app/assets/styles/index.scss"
-      ],
-      "files": [
-        "static/css/app/[lng]/layout.css"
       ]
     },
     "/Users/polina/Desktop/WORK/exercise/alekfrinth.com/src/app/[lng]/the-body-of-freedom/page": {

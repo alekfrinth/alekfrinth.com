@@ -203,6 +203,107 @@
   }
 }
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/[lng]/the-body-of-freedom/index.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import 'https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Roboto Mono:wght@400&display=swap';
+/* cormorant-regular - latin */
+.the-body-of-freedom_main__ldG9p p {
+  font: 400 normal 16px/normal "Roboto Mono";
+}
+
+.the-body-of-freedom_container__bpuxU {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 130px 0 20px;
+  color: var(--color-gray-dark);
+}
+.the-body-of-freedom_container__bpuxU h1 {
+  font: 700 normal 28px/normal "Cormorant";
+  margin-bottom: 40px;
+  padding-left: 50px;
+}
+.the-body-of-freedom_container__bpuxU .the-body-of-freedom_text__hk_NE {
+  max-width: 555px;
+  text-indent: 10px;
+  margin-bottom: 200px;
+}
+
+.the-body-of-freedom_report__ikotp {
+  text-align: center;
+  padding: 250px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .the-body-of-freedom_main__ldG9p {
+    max-width: 414px;
+    margin: 0 auto;
+  }
+  .the-body-of-freedom_container__bpuxU {
+    padding: 270px 30px 75px;
+  }
+  .the-body-of-freedom_container__bpuxU .the-body-of-freedom_text__hk_NE {
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 80px;
+    max-width: 100%;
+  }
+  .the-body-of-freedom_container__bpuxU h1 {
+    padding-left: 52px;
+    margin-bottom: 50px;
+  }
+  .the-body-of-freedom_container__bpuxU .the-body-of-freedom_video__9UI7n {
+    height: 200px;
+  }
+  .the-body-of-freedom_report__ikotp {
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 300px 0;
+  }
+  .the-body-of-freedom_video__9UI7n img {
+    width: 100%;
+    height: auto;
+  }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/components/Authors/index.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import 'https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Roboto Mono:wght@400&display=swap';
+/* cormorant-regular - latin */
+.Authors_container__wLB_C {
+  background-color: var(--color-gray-dark);
+  color: var(--color-white);
+  padding: 110px 195px 130px;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.Authors_container__wLB_C .Authors_worked-by__18PQZ {
+  font: 700 normal 28px/normal "Cormorant";
+  padding: 0 30px 80px;
+}
+.Authors_container__wLB_C .Authors_authors-container__MdatS {
+  display: grid;
+  grid-template-columns: repeat(3, 230px);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 80px 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .Authors_container__wLB_C {
+    padding: 40px 0 70px;
+    margin: 75px auto 0;
+    max-width: 360px;
+  }
+  .Authors_container__wLB_C .Authors_authors-container__MdatS {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/components/Authors/Author/index.module.scss ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 @import 'https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;700&display=swap';
@@ -273,43 +374,6 @@
   }
   .Author_container__jWUSc .Author_social__Nysqg .Author_social-icons-container__s7N_D {
     padding-top: 20px;
-  }
-}
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/components/Authors/index.module.scss ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-@import 'https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;700&display=swap';
-@import 'https://fonts.googleapis.com/css2?family=Roboto Mono:wght@400&display=swap';
-/* cormorant-regular - latin */
-.Authors_container__wLB_C {
-  background-color: var(--color-gray-dark);
-  color: var(--color-white);
-  padding: 110px 195px 130px;
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-}
-.Authors_container__wLB_C .Authors_worked-by__18PQZ {
-  font: 700 normal 28px/normal "Cormorant";
-  padding: 0 30px 80px;
-}
-.Authors_container__wLB_C .Authors_authors-container__MdatS {
-  display: grid;
-  grid-template-columns: repeat(3, 230px);
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 80px 60px;
-}
-
-@media screen and (max-width: 768px) {
-  .Authors_container__wLB_C {
-    padding: 40px 0 70px;
-    margin: 75px auto 0;
-    max-width: 360px;
-  }
-  .Authors_container__wLB_C .Authors_authors-container__MdatS {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
   }
 }
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -561,47 +625,6 @@
     margin: 80px 48px 0;
   }
 }
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/components/common/PaintingDescriptionWrapper/index.module.scss ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.PaintingDescriptionWrapper_wrapper__PtZzt {
-  border: 32px solid transparent;
-  position: relative;
-}
-.PaintingDescriptionWrapper_wrapper__PtZzt::before, .PaintingDescriptionWrapper_wrapper__PtZzt::after {
-  content: "";
-  display: block;
-  width: calc(100% + 32px);
-  height: calc(100% + 32px);
-  border: 2px solid black;
-  border-right-width: 0;
-  position: absolute;
-}
-.PaintingDescriptionWrapper_wrapper__PtZzt::after {
-  top: 0;
-  left: 0;
-}
-.PaintingDescriptionWrapper_wrapper__PtZzt::before {
-  top: -32px;
-  left: -32px;
-}
-.PaintingDescriptionWrapper_wrapper--left__rdwOK::before, .PaintingDescriptionWrapper_wrapper--left__rdwOK::after {
-  border-right-width: 2px;
-  border-left-width: 0;
-}
-.PaintingDescriptionWrapper_wrapper--left__rdwOK::after {
-  top: 0;
-  right: 0;
-  left: auto;
-}
-.PaintingDescriptionWrapper_wrapper--left__rdwOK::before {
-  top: -32px;
-  right: -32px;
-  left: auto;
-}
-.PaintingDescriptionWrapper_wrapper--no-borders__ceqVW::before, .PaintingDescriptionWrapper_wrapper--no-borders__ceqVW::after {
-  display: none;
-}
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/components/PaintingsPart1/index.module.scss ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -703,6 +726,47 @@
   .PaintingsPart1_right-padding__sjnoO {
     padding-right: 29px;
   }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/components/common/PaintingDescriptionWrapper/index.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.PaintingDescriptionWrapper_wrapper__PtZzt {
+  border: 32px solid transparent;
+  position: relative;
+}
+.PaintingDescriptionWrapper_wrapper__PtZzt::before, .PaintingDescriptionWrapper_wrapper__PtZzt::after {
+  content: "";
+  display: block;
+  width: calc(100% + 32px);
+  height: calc(100% + 32px);
+  border: 2px solid black;
+  border-right-width: 0;
+  position: absolute;
+}
+.PaintingDescriptionWrapper_wrapper__PtZzt::after {
+  top: 0;
+  left: 0;
+}
+.PaintingDescriptionWrapper_wrapper__PtZzt::before {
+  top: -32px;
+  left: -32px;
+}
+.PaintingDescriptionWrapper_wrapper--left__rdwOK::before, .PaintingDescriptionWrapper_wrapper--left__rdwOK::after {
+  border-right-width: 2px;
+  border-left-width: 0;
+}
+.PaintingDescriptionWrapper_wrapper--left__rdwOK::after {
+  top: 0;
+  right: 0;
+  left: auto;
+}
+.PaintingDescriptionWrapper_wrapper--left__rdwOK::before {
+  top: -32px;
+  right: -32px;
+  left: auto;
+}
+.PaintingDescriptionWrapper_wrapper--no-borders__ceqVW::before, .PaintingDescriptionWrapper_wrapper--no-borders__ceqVW::after {
+  display: none;
 }
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/components/PaintingsPart2/index.module.scss ***!
@@ -907,69 +971,5 @@
   }
   .PaintingsPart3_desktop__b1UXu {
     display: none;
-  }
-}
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/[lng]/the-body-of-freedom/index.module.scss ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-@import 'https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;700&display=swap';
-@import 'https://fonts.googleapis.com/css2?family=Roboto Mono:wght@400&display=swap';
-/* cormorant-regular - latin */
-.the-body-of-freedom_main__ldG9p p {
-  font: 400 normal 16px/normal "Roboto Mono";
-}
-
-.the-body-of-freedom_container__bpuxU {
-  width: 100%;
-  max-width: 750px;
-  margin: 0 auto;
-  padding: 130px 0 20px;
-  color: var(--color-gray-dark);
-}
-.the-body-of-freedom_container__bpuxU h1 {
-  font: 700 normal 28px/normal "Cormorant";
-  margin-bottom: 40px;
-  padding-left: 50px;
-}
-.the-body-of-freedom_container__bpuxU .the-body-of-freedom_text__hk_NE {
-  max-width: 555px;
-  text-indent: 10px;
-  margin-bottom: 200px;
-}
-
-.the-body-of-freedom_report__ikotp {
-  text-align: center;
-  padding: 250px 0;
-}
-
-@media screen and (max-width: 768px) {
-  .the-body-of-freedom_main__ldG9p {
-    max-width: 414px;
-    margin: 0 auto;
-  }
-  .the-body-of-freedom_container__bpuxU {
-    padding: 270px 30px 75px;
-  }
-  .the-body-of-freedom_container__bpuxU .the-body-of-freedom_text__hk_NE {
-    margin: 0 auto;
-    padding: 0 20px;
-    margin-bottom: 80px;
-    max-width: 100%;
-  }
-  .the-body-of-freedom_container__bpuxU h1 {
-    padding-left: 52px;
-    margin-bottom: 50px;
-  }
-  .the-body-of-freedom_container__bpuxU .the-body-of-freedom_video__9UI7n {
-    height: 200px;
-  }
-  .the-body-of-freedom_report__ikotp {
-    max-width: 250px;
-    margin: 0 auto;
-    padding: 300px 0;
-  }
-  .the-body-of-freedom_video__9UI7n img {
-    width: 100%;
-    height: auto;
   }
 }

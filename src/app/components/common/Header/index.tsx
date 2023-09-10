@@ -11,7 +11,7 @@ import HomeSVG from '@/app/assets/icons/home.svg';
 
 import styles from './index.module.scss';
 
-const LANGUAGE_PREFIX_LENGTH = 3;
+const LANGUAGE_PREFIX_LENGTH = 4;
 
 const Header = ({ lng }: { lng: string }) => {
   const pathname = usePathname();
