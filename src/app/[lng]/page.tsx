@@ -11,7 +11,7 @@ const Home = async ({ params: { lng } }: { params: { lng: string } }) => {
 
   return (
     <>
-      <Header lng={lng} />
+      <Header lng={lng} >
 
       <main className={styles.main}>
         <a href={`/${lng}/the-body-of-freedom`} className={styles.button}>
@@ -24,7 +24,7 @@ const Home = async ({ params: { lng } }: { params: { lng: string } }) => {
           {t('in-progress')}
         </Button>
       </main>
-      <Footer lng={lng} />
+      <Footer lng={lng} >
     </>
   );
 };
