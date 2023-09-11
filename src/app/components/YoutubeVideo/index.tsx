@@ -18,6 +18,7 @@ const YoutubeVideo = ({ className }: Props) => {
         alt="Youtube Video"
         width={750}
         height={422}
+        loading="eager"
       />
     </a>
   );

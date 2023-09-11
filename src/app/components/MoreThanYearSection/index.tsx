@@ -27,6 +27,7 @@ const MoreThanYearSection = async ({ lng }: Props) => {
           height={810}
           style={{ objectFit: 'cover' }}
           className={styles.image}
+          loading="eager"
         />
 
         <p className={styles.body}>{t('body-freedom-is')}</p>
@@ -37,6 +38,7 @@ const MoreThanYearSection = async ({ lng }: Props) => {
           height={480}
           className={cn(styles.mobile, styles.image)}
           style={{ objectFit: 'cover' }}
+          loading="eager"
         />
         <Image
           src={Info_2_Photo_2}
@@ -45,6 +47,7 @@ const MoreThanYearSection = async ({ lng }: Props) => {
           height={810}
           className={cn(styles.desktop)}
           style={{ objectFit: 'cover' }}
+          loading="eager"
         />
       </div>
 
@@ -56,6 +59,7 @@ const MoreThanYearSection = async ({ lng }: Props) => {
           height={480}
           style={{ objectFit: 'cover' }}
           className={cn(styles.desktop)}
+          loading="eager"
         />
         <Image
           src={Info_2_Photo_2}
@@ -64,6 +68,7 @@ const MoreThanYearSection = async ({ lng }: Props) => {
           height={810}
           className={cn(styles.mobile, styles.image)}
           style={{ objectFit: 'cover' }}
+          loading="eager"
         />
         <Image
           src={Info_2_Photo_4}
@@ -72,6 +77,7 @@ const MoreThanYearSection = async ({ lng }: Props) => {
           height={480}
           style={{ objectFit: 'cover' }}
           className={cn(styles.image)}
+          loading="eager"
         />
       </div>
     </>

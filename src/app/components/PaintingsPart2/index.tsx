@@ -40,13 +40,37 @@ const PaintingsPart2 = async ({ lng }: Props) => {
       </PaintingDescriptionWrapper>
 
       <div className={cn(styles.images, styles.desktop)}>
-        <Image src={Painting_4} alt="painting" width={262} height={188} />
-        <Image src={Painting_5} alt="painting" width={262} height={188} />
-        <Image src={Painting_6} alt="painting" width={188} height={262} />
+        <Image
+          src={Painting_4}
+          alt="painting"
+          width={262}
+          height={188}
+          loading="eager"
+        />
+        <Image
+          src={Painting_5}
+          alt="painting"
+          width={262}
+          height={188}
+          loading="eager"
+        />
+        <Image
+          src={Painting_6}
+          alt="painting"
+          width={188}
+          height={262}
+          loading="eager"
+        />
       </div>
 
       <div className={cn(styles.row, styles.mobile, styles.leftPadding)}>
-        <Image src={Painting_4} alt="painting" width={202} height={145} />
+        <Image
+          src={Painting_4}
+          alt="painting"
+          width={202}
+          height={145}
+          loading="eager"
+        />
 
         <PaintingDescriptionWrapper
           className={cn(styles['painting-description'])}
@@ -70,11 +94,23 @@ const PaintingsPart2 = async ({ lng }: Props) => {
             <span>{t('acrylic')}</span>
           </p>
         </PaintingDescriptionWrapper>
-        <Image src={Painting_5} alt="painting" width={202} height={145} />
+        <Image
+          src={Painting_5}
+          alt="painting"
+          width={202}
+          height={145}
+          loading="eager"
+        />
       </div>
 
       <div className={cn(styles.row, styles.mobile, styles.leftPadding)}>
-        <Image src={Painting_6} alt="painting" width={145} height={202} />
+        <Image
+          src={Painting_6}
+          alt="painting"
+          width={145}
+          height={202}
+          loading="eager"
+        />
 
         <PaintingDescriptionWrapper className={styles['painting-description']}>
           <p className={styles.description}>

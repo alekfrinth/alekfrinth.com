@@ -35,6 +35,7 @@ const PaintingsPart1 = async ({ lng }: Props) => {
           width={262}
           height={357}
           style={{ objectFit: 'cover' }}
+          loading="eager"
         />
         <Image
           src={Painting_2}
@@ -42,6 +43,7 @@ const PaintingsPart1 = async ({ lng }: Props) => {
           width={262}
           height={357}
           style={{ objectFit: 'cover' }}
+          loading="eager"
         />
         <Image
           src={Painting_3}
@@ -49,6 +51,7 @@ const PaintingsPart1 = async ({ lng }: Props) => {
           width={262}
           height={357}
           style={{ objectFit: 'cover' }}
+          loading="eager"
         />
       </div>
 
@@ -79,6 +82,7 @@ const PaintingsPart1 = async ({ lng }: Props) => {
           width={202}
           height={275}
           style={{ objectFit: 'cover' }}
+          loading="eager"
         />
         <PaintingDescriptionWrapper
           className={cn(styles['painting-description'])}
@@ -107,6 +111,7 @@ const PaintingsPart1 = async ({ lng }: Props) => {
           width={202}
           height={275}
           style={{ objectFit: 'cover' }}
+          loading="eager"
         />
       </div>
       <div className={cn(styles.row, styles.mobile, styles['left-padding'])}>
@@ -116,6 +121,7 @@ const PaintingsPart1 = async ({ lng }: Props) => {
           width={202}
           height={275}
           style={{ objectFit: 'cover' }}
+          loading="eager"
         />
         <PaintingDescriptionWrapper className={styles['painting-description']}>
           <p className={styles.painting}>

@@ -20,6 +20,7 @@ const BodySection = async ({ lng }: Props) => {
         width={540}
         height={810}
         className={styles.image}
+        loading="eager"
       />
     </div>
   );

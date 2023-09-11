@@ -26,6 +26,7 @@ const PaintSection = async ({ lng }: Props) => {
           width={540}
           height={810}
           className={styles.image}
+          loading="eager"
         />
 
         <Image
@@ -35,6 +36,7 @@ const PaintSection = async ({ lng }: Props) => {
           alt="body"
           className={cn(styles.image, styles.mobile)}
           style={{ objectFit: 'cover' }}
+          loading="eager"
         />
 
         <p>{t('paint-is')}</p>
@@ -44,6 +46,7 @@ const PaintSection = async ({ lng }: Props) => {
           width={540}
           height={810}
           className={cn(styles.image, styles.desktop)}
+          loading="eager"
         />
       </div>
       <div className={styles.images}>
@@ -53,6 +56,7 @@ const PaintSection = async ({ lng }: Props) => {
           height={480}
           alt="body"
           className={cn(styles.image, styles.desktop)}
+          loading="eager"
         />
         <Image
           src={Info_1_Photo_3}
@@ -60,6 +64,7 @@ const PaintSection = async ({ lng }: Props) => {
           width={540}
           height={810}
           className={cn(styles.image, styles.mobile)}
+          loading="eager"
         />
         <Image
           src={Info_1_Photo_5}
@@ -67,6 +72,7 @@ const PaintSection = async ({ lng }: Props) => {
           height={480}
           alt="body"
           className={styles.image}
+          loading="eager"
         />
       </div>
     </>
