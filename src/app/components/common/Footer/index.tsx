@@ -26,7 +26,7 @@ const developers = [
   {
     name: 'vladyslav-marchenko-name',
     avatar: AvatarVladyslav,
-    github: 'https://google.com/',
+    github: 'https://github.com/vvmarchenko',
     linkedin: 'https://www.linkedin.com/in/vvmarchenko/',
     position: 'vladyslav-marchenko-position',
   },
