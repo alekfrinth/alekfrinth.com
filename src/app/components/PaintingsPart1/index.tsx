@@ -86,6 +86,7 @@ const PaintingsPart1 = async ({ lng }: Props) => {
         />
         <PaintingDescriptionWrapper
           className={cn(styles['painting-description'])}
+          height={275}
         >
           <p className={styles.painting}>
             <span>{t('painting-1')}</span>
@@ -123,7 +124,10 @@ const PaintingsPart1 = async ({ lng }: Props) => {
           style={{ objectFit: 'cover' }}
           loading="eager"
         />
-        <PaintingDescriptionWrapper className={styles['painting-description']}>
+        <PaintingDescriptionWrapper
+          className={styles['painting-description']}
+          height={275}
+        >
           <p className={styles.painting}>
             <span>{t('painting-3')}</span>
             <span>{t('cm', { size: '60x80' })}</span>

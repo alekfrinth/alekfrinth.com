@@ -7,6 +7,7 @@ type Props = {
   position?: 'left' | 'right';
   className?: string;
   noBorders?: boolean;
+  height?: number;
 };
 
 const PaintingDescriptionWrapper = ({
@@ -14,6 +15,7 @@ const PaintingDescriptionWrapper = ({
   children,
   position = 'right',
   noBorders = false,
+  height,
 }: Props) => {
   return (
     <div
@@ -21,6 +23,7 @@ const PaintingDescriptionWrapper = ({
         [styles['wrapper--left']]: position === 'left',
         [styles['wrapper--no-borders']]: noBorders,
       })}
+      style={{ height: height ? `${height + 16}px` : '' }}
     >
       {children}
     </div>

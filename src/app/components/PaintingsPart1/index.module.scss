@@ -136,6 +136,12 @@
   }
 
   .container .painting-description {
+    width: 100%;
+
+    p {
+      max-width: 100%;
+    }
+
     &::before,
     &::after {
       width: calc(100% - 16px);

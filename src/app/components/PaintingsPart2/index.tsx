@@ -74,6 +74,7 @@ const PaintingsPart2 = async ({ lng }: Props) => {
 
         <PaintingDescriptionWrapper
           className={cn(styles['painting-description'])}
+          height={145}
         >
           <p className={styles.description}>
             <span>{t('canvas-no', { number: 4 })}</span>
@@ -112,7 +113,10 @@ const PaintingsPart2 = async ({ lng }: Props) => {
           loading="eager"
         />
 
-        <PaintingDescriptionWrapper className={styles['painting-description']}>
+        <PaintingDescriptionWrapper
+          className={styles['painting-description']}
+          height={202}
+        >
           <p className={styles.description}>
             <span>{t('canvas-no', { number: 6 })}</span>
             <span>{t('cm', { size: '30x40' })}</span>
