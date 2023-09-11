@@ -94,3 +94,16 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
         # This step deploys the site to GitHub Pages.
+
+  purge-cache:
+    needs: [deploy]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send API request to CloudFlare
+        run: |
+          set -ex
+          curl -s -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLAREZONEID }}/purge_cache" \
+                          -H "Authorization: Bearer ${{ secrets.CLOUDFLAREPURGETOKEN }}" \
+                          -H "Content-Type: application/json" \
+                          --data '{"purge_everything":true}' | jq '.success'
+
