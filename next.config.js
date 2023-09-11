@@ -9,6 +9,7 @@ const nextConfig = {
     });
     return config;
   },
+  trailingSlash: false,
 };
 
 module.exports = nextConfig;
