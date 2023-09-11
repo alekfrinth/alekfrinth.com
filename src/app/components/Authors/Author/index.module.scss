@@ -83,3 +83,13 @@
     }
   }
 }
+
+@media screen and (width <= 415px) {
+  .container {
+    .social {
+      .email {
+        font-size: 16px;
+      }
+    }
+  }
+}

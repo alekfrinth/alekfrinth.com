@@ -123,13 +123,21 @@
     }
 
     .developer {
-      max-width: auto;
+      max-width: 100%;
     }
 
     .name {
       @include text(sub-title, 2);
 
       margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (width <= 415px) {
+  .footer {
+    .developer {
+      gap: 16px;
     }
   }
 }

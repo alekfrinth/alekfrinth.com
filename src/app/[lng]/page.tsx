@@ -1,5 +1,4 @@
 import { useTranslation } from '@/app/i18n';
-import Link from 'next/link';
 
 import Button from '@/app/components/common/Button';
 import Footer from '@/app/components/common/Footer';
