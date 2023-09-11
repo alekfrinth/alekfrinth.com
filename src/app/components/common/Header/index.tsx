@@ -18,6 +18,12 @@ const Header = ({ lng }: { lng: string }) => {
   const availableLanguage = languages.find(language => language !== lng);
   const isHomeLinkVisible = pathname.length > LANGUAGE_PREFIX_LENGTH;
 
+  console.log(
+    'link test: ',
+    `/${availableLanguage}/${pathname.slice(LANGUAGE_PREFIX_LENGTH)}`
+  );
+  console.log('pathname: ', pathname);
+
   return (
     <header className={styles.header}>
       {isHomeLinkVisible && (
