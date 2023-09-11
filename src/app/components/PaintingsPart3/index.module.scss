@@ -114,3 +114,32 @@
     display: none;
   }
 }
+
+@media screen and (width <= 415px) {
+  .container {
+    .row {
+      width: 100%;
+
+      &:first-of-type {
+        padding-left: 8px;
+
+        .image {
+          width: 230px;
+        }
+
+        .paintings {
+          padding-top: 27px;
+          padding-bottom: 0;
+          padding-left: 12px;
+          border-width: 0;
+        }
+      }
+
+      &:nth-of-type(2) {
+        .paintings {
+          min-width: 140px;
+        }
+      }
+    }
+  }
+}

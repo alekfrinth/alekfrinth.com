@@ -96,7 +96,7 @@ const PaintingsPart1 = async ({ lng }: Props) => {
       </div>
       <div className={cn(styles.row, styles.mobile, styles['right-padding'])}>
         <PaintingDescriptionWrapper
-          className={cn(styles['painting-description'])}
+          className={cn(styles['painting-description'], styles['no-borders'])}
           noBorders
         >
           <p className={styles.painting}>

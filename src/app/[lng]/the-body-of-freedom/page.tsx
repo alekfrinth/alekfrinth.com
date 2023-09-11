@@ -30,6 +30,7 @@ const FreedomBody = async ({
           <p className={styles.text}>{t('project-the-body-of-freedom')}</p>
           <YoutubeVideo className={styles.video} />
         </div>
+
         <PaintingsPart1 lng={lng} />
         <BodySection lng={lng} />
         <PaintSection lng={lng} />
