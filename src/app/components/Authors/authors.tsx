@@ -68,7 +68,7 @@ export const authors: AuthorData[] = [
       email: 'artvideopalam@gmail.com',
       links: {
         instagram: 'http://instagram.com/_u/artpalam/',
-        telegram: 't.me/artpalam',
+        telegram: 'https://t.me/artpalam',
       },
     },
   },

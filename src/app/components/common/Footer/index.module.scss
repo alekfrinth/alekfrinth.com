@@ -104,6 +104,8 @@
 
 @media screen and (width <= 768px) {
   .footer {
+    padding: 19px 12px;
+
     .developers {
       flex-direction: column;
       align-items: center;
@@ -118,6 +120,10 @@
     .avatar {
       width: 47px;
       height: 47px;
+    }
+
+    .developer {
+      max-width: auto;
     }
 
     .name {
