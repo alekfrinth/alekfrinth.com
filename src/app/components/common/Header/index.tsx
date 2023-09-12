@@ -18,11 +18,10 @@ const Header = ({ lng }: { lng: string }) => {
   const availableLanguage = languages.find(language => language !== lng);
   const isHomeLinkVisible = pathname.length > LANGUAGE_PREFIX_LENGTH;
 
-  console.log(
-    'link test: ',
-    `/${availableLanguage}/${pathname.slice(LANGUAGE_PREFIX_LENGTH)}`
-  );
-  console.log('pathname: ', pathname);
+  const pathnameSuffix = pathname.slice(LANGUAGE_PREFIX_LENGTH);
+  const newLanguageLink = pathnameSuffix
+    ? `/${availableLanguage}/${pathnameSuffix}`
+    : `/${availableLanguage}`;
 
   return (
     <header className={styles.header}>
@@ -31,10 +30,7 @@ const Header = ({ lng }: { lng: string }) => {
           <HomeSVG width="42px" height="42px" />
         </a>
       )}
-      <a
-        href={`/${availableLanguage}/${pathname.slice(LANGUAGE_PREFIX_LENGTH)}`}
-        className={styles.language}
-      >
+      <a href={newLanguageLink} className={styles.language}>
         <Button type="button" className={styles.button}>
           {availableLanguage}
         </Button>
