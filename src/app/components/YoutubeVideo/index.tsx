@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+import PlaySVG from '@/app/assets/icons/play_button.svg';
 import VideoBackground from '@/app/assets/images/video_button.png';
 
 type Props = {
@@ -20,6 +21,7 @@ const YoutubeVideo = ({ className }: Props) => {
         height={422}
         loading="eager"
       />
+      <PlaySVG />
     </a>
   );
 };

@@ -25,6 +25,43 @@
     text-indent: 10px;
     margin-bottom: 200px;
   }
+
+  .video {
+    position: relative;
+    display: block;
+    
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: rgb(255 255 255 / 10%);
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: all 0.2s ease-in-out;
+
+    }
+
+    &:hover {
+      &::after {
+        background: transparent;
+      }
+    }
+
+    img {
+      border-radius: 10px;
+    }
+
+    svg {
+position: absolute;
+margin: auto;
+width: 90px;
+height: 90px;
+inset: 0;
+
+    }
+  }
 }
 
 .report {
@@ -54,7 +91,10 @@
     }
 
     .video {
-      height: 200px;
+      svg {
+        width: 50px;
+        height: 50px;
+      }
     }
   }
 
