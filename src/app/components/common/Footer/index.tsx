@@ -38,6 +38,7 @@ type Props = {
 
 const Footer = async ({ lng }: Props) => {
   const { t } = await useTranslation(lng, 'common');
+
   return (
     <footer className={styles.footer}>
       <ul className={styles.developers}>
@@ -52,7 +53,7 @@ const Footer = async ({ lng }: Props) => {
             />
             <div>
               <p className={styles.name}>
-                {t(developer.name)}
+                <span>{t(developer.name)}</span>
                 <a href={developer.linkedin} target="_blank">
                   <LinkedInSVG />
                 </a>

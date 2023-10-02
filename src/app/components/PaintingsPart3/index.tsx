@@ -3,6 +3,7 @@ import cn from 'classnames';
 import Image from 'next/image';
 
 import PaintingDescriptionWrapper from '@/app/components/common/PaintingDescriptionWrapper';
+import PaintingWrapper from '@/app/components/common/PaintingWrapper';
 
 import Painting_7 from '@/app/assets/images/paintings/Painting_7.png';
 import Painting_8 from '@/app/assets/images/paintings/Painting_8.png';
@@ -19,12 +20,15 @@ const PaintingsPart3 = async ({ lng }: Props) => {
   return (
     <div className={styles.container}>
       <div className={styles.row}>
-        <Image
+        <PaintingWrapper
           src={Painting_7}
           alt="painting"
           width={425}
           height={195}
           className={styles.image}
+          lng={lng}
+          isSold={undefined}
+          href=""
         />
 
         <PaintingDescriptionWrapper
@@ -40,12 +44,15 @@ const PaintingsPart3 = async ({ lng }: Props) => {
       </div>
 
       <div className={styles.row}>
-        <Image
+        <PaintingWrapper
           src={Painting_8}
           alt="painting"
           width={195}
           height={425}
           className={styles.image}
+          lng={lng}
+          isSold={undefined}
+          href=""
         />
         <PaintingDescriptionWrapper
           className={cn(styles.paintings, styles.mobile)}

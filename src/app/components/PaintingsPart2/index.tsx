@@ -3,6 +3,7 @@ import cn from 'classnames';
 import Image from 'next/image';
 
 import PaintingDescriptionWrapper from '@/app/components/common/PaintingDescriptionWrapper';
+import PaintingWrapper from '@/app/components/common/PaintingWrapper';
 
 import Painting_4 from '@/app/assets/images/paintings/Painting_4.png';
 import Painting_5 from '@/app/assets/images/paintings/Painting_5.png';
@@ -40,36 +41,48 @@ const PaintingsPart2 = async ({ lng }: Props) => {
       </PaintingDescriptionWrapper>
 
       <div className={cn(styles.images, styles.desktop)}>
-        <Image
+        <PaintingWrapper
           src={Painting_4}
           alt="painting"
           width={262}
           height={188}
           loading="eager"
+          lng={lng}
+          isSold={undefined}
+          href=""
         />
-        <Image
+        <PaintingWrapper
           src={Painting_5}
           alt="painting"
           width={262}
           height={188}
           loading="eager"
+          lng={lng}
+          isSold={undefined}
+          href=""
         />
-        <Image
+        <PaintingWrapper
           src={Painting_6}
           alt="painting"
           width={188}
           height={262}
           loading="eager"
+          lng={lng}
+          isSold={undefined}
+          href=""
         />
       </div>
 
       <div className={cn(styles.row, styles.mobile, styles.leftPadding)}>
-        <Image
+        <PaintingWrapper
           src={Painting_4}
           alt="painting"
           width={202}
           height={145}
           loading="eager"
+          lng={lng}
+          isSold={undefined}
+          href=""
         />
 
         <PaintingDescriptionWrapper
@@ -95,22 +108,28 @@ const PaintingsPart2 = async ({ lng }: Props) => {
             <span>{t('acrylic')}</span>
           </p>
         </PaintingDescriptionWrapper>
-        <Image
+        <PaintingWrapper
           src={Painting_5}
           alt="painting"
           width={202}
           height={145}
           loading="eager"
+          lng={lng}
+          isSold={undefined}
+          href=""
         />
       </div>
 
       <div className={cn(styles.row, styles.mobile, styles.leftPadding)}>
-        <Image
+        <PaintingWrapper
           src={Painting_6}
           alt="painting"
           width={145}
           height={202}
           loading="eager"
+          lng={lng}
+          isSold={undefined}
+          href=""
         />
 
         <PaintingDescriptionWrapper

@@ -3,6 +3,7 @@ import cn from 'classnames';
 import Image from 'next/image';
 
 import PaintingDescriptionWrapper from '@/app/components/common/PaintingDescriptionWrapper';
+import PaintingWrapper from '@/app/components/common/PaintingWrapper';
 
 import Painting_1 from '@/app/assets/images/paintings/Painting_1.png';
 import Painting_2 from '@/app/assets/images/paintings/Painting_2.png';
@@ -29,29 +30,38 @@ const PaintingsPart1 = async ({ lng }: Props) => {
         {t('8-paintings')}
       </p>
       <div className={cn(styles.images, styles.desktop)}>
-        <Image
+        <PaintingWrapper
           src={Painting_1}
           alt={t('painting-1')}
           width={262}
           height={357}
           style={{ objectFit: 'cover' }}
           loading="eager"
+          lng={lng}
+          isSold={undefined}
+          href=""
         />
-        <Image
+        <PaintingWrapper
           src={Painting_2}
           alt={t('painting-2')}
           width={262}
           height={357}
           style={{ objectFit: 'cover' }}
           loading="eager"
+          lng={lng}
+          isSold={undefined}
+          href=""
         />
-        <Image
+        <PaintingWrapper
           src={Painting_3}
           alt={t('painting-3')}
           width={262}
           height={357}
           style={{ objectFit: 'cover' }}
           loading="eager"
+          lng={lng}
+          isSold={undefined}
+          href=""
         />
       </div>
 
@@ -76,13 +86,16 @@ const PaintingsPart1 = async ({ lng }: Props) => {
       </PaintingDescriptionWrapper>
 
       <div className={cn(styles.row, styles.mobile, styles['left-padding'])}>
-        <Image
+        <PaintingWrapper
           src={Painting_1}
           alt={t('painting-1')}
           width={202}
           height={275}
           style={{ objectFit: 'cover' }}
           loading="eager"
+          lng={lng}
+          isSold={undefined}
+          href=""
         />
         <PaintingDescriptionWrapper
           className={cn(styles['painting-description'])}
@@ -106,23 +119,29 @@ const PaintingsPart1 = async ({ lng }: Props) => {
             <span>{t('acrylic')}</span>
           </p>
         </PaintingDescriptionWrapper>
-        <Image
+        <PaintingWrapper
           src={Painting_2}
           alt={t('painting-2')}
           width={202}
           height={275}
           style={{ objectFit: 'cover' }}
           loading="eager"
+          lng={lng}
+          isSold={undefined}
+          href=""
         />
       </div>
       <div className={cn(styles.row, styles.mobile, styles['left-padding'])}>
-        <Image
+        <PaintingWrapper
           src={Painting_3}
           alt={t('painting-3')}
           width={202}
           height={275}
           style={{ objectFit: 'cover' }}
           loading="eager"
+          lng={lng}
+          isSold={undefined}
+          href=""
         />
         <PaintingDescriptionWrapper
           className={styles['painting-description']}

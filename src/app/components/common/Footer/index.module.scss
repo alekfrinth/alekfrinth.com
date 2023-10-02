@@ -88,6 +88,10 @@
 
     align-items: center;
 
+    span {
+      white-space: nowrap;
+    }
+
     svg,
     a {
       width: 25px;
