@@ -102,7 +102,7 @@ const Footer = async ({ lng }: Props) => {
         </div>
       </div>
       <div className={styles.description}>
-        <span>© alekfrinth 2023</span>
+        <span>© alekfrinth 2024</span>
       </div>
     </footer>
   );
