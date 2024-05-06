@@ -19,7 +19,9 @@ const MoreThanYearSection = async ({ lng }: Props) => {
   return (
     <>
       <div className={styles.container}>
-        <p className={styles.more}>{t('more-than-year')}</p>
+        <p className={styles.more}>
+          {t('more-than-year-1')} <span>{t('more-than-year-2')}</span>
+        </p>
         <Image
           src={Info_2_Photo_1}
           alt={t('painting-1')}
@@ -30,7 +32,11 @@ const MoreThanYearSection = async ({ lng }: Props) => {
           loading="eager"
         />
 
-        <p className={styles.body}>{t('body-freedom-is')}</p>
+        <p className={styles.body}>
+          {t('body-freedom-is-1')}
+          <span>{t('body-freedom-is-2')}</span>
+          <span>{t('body-freedom-is-3')}</span>
+        </p>
         <Image
           src={Info_2_Photo_3}
           alt={t('painting-1')}

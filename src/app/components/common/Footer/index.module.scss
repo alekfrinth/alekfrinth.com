@@ -16,8 +16,16 @@
   }
 
   .mail {
-    align-items: center;
     padding: 20px;
+
+    a {
+      color: var(--color-white);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   .description {

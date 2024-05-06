@@ -2,7 +2,6 @@
 
 import { useTranslation } from '@/app/i18n';
 import Image from 'next/image';
-import Link from 'next/link';
 
 import GithubSVG from '@/app/assets/icons/github.svg';
 import InstagramSVG from '@/app/assets/icons/instagram.svg';
@@ -98,7 +97,7 @@ const Footer = async ({ lng }: Props) => {
           </a>
         </div>
         <div className={styles.mail}>
-          <span>alekfrinth@gmail.com</span>
+          <a href="mailto:alekfrinth@gmail.com">alekfrinth@gmail.com</a>
         </div>
       </div>
       <div className={styles.description}>

@@ -27,11 +27,14 @@ const PaintingWrapper = async ({
   return (
     <a
       className={cn(styles.wrapper, className)}
-      style={{ width: props.width, height: props.height }}
+      style={{ maxWidth: props.width, maxHeight: props.height }}
       href={href}
+      target="_blank"
     >
       <Image {...props} alt={props.alt} />
-      <span className={styles.status}>{t(isSold ? 'sold' : 'buy')}</span>
+      <span className={styles['status-wrap']}>
+        <span className={styles.status}>{t(isSold ? 'sold' : 'buy')}</span>
+      </span>
     </a>
   );
 };

@@ -34,10 +34,17 @@
 
   @include container;
 
-  flex-wrap: wrap;
-
   .image {
     object-fit: cover;
+    width: 50%;
+  }
+
+  @media screen and (width < 1440px) {
+    flex-wrap: wrap;
+
+    .image {
+      width: 720px;
+    }
   }
 }
 
