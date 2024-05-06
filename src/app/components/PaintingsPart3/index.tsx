@@ -27,8 +27,8 @@ const PaintingsPart3 = async ({ lng }: Props) => {
           height={195}
           className={styles.image}
           lng={lng}
-          isSold={undefined}
-          href=""
+          isSold={false}
+          href="https://www.myminiauction.com/rickrollersauctions#item-138249"
         />
 
         <PaintingDescriptionWrapper
