@@ -29,7 +29,7 @@
   .video {
     position: relative;
     display: block;
-    
+
     &::after {
       content: '';
       display: block;
@@ -40,7 +40,6 @@
       left: 0;
       top: 0;
       transition: all 0.2s ease-in-out;
-
     }
 
     &:hover {
@@ -54,12 +53,11 @@
     }
 
     svg {
-position: absolute;
-margin: auto;
-width: 90px;
-height: 90px;
-inset: 0;
-
+      position: absolute;
+      margin: auto;
+      width: 90px;
+      height: 90px;
+      inset: 0;
     }
   }
 }
@@ -80,14 +78,17 @@ inset: 0;
 
     .text {
       margin: 0 auto;
-      padding: 0 20px;
-      margin-bottom: 80px;
+      margin-bottom: 92px;
       max-width: 100%;
+      line-height: 19.78px;
+      padding: 0 0 0 20px;
     }
 
     h1 {
       padding-left: 52px;
       margin-bottom: 50px;
+      font-size: 24px;
+      line-height: 29px;
     }
 
     .video {
@@ -107,13 +108,5 @@ inset: 0;
   .video img {
     width: 100%;
     height: auto;
-  }
-}
-
-@media screen and (width <= 768px) {
-  .container {
-    .text {
-      padding: 0;
-    }
   }
 }

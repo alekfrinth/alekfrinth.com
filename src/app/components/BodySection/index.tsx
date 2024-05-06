@@ -13,7 +13,10 @@ const BodySection = async ({ lng }: Props) => {
 
   return (
     <div className={styles.wrapper}>
-      <p className={styles.description}>{t('body-is')}</p>
+      <p className={styles.description}>
+        {t('body-is-1')}
+        <span>{t('body-is-2')}</span>
+      </p>
       <Image
         src={Info_1_Photo_1}
         alt="body"

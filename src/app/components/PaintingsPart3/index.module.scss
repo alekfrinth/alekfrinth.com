@@ -42,6 +42,7 @@
     padding: 75px 0;
     gap: 35px;
     align-items: flex-start;
+    margin-top: 75px;
 
     .paintings {
       margin-left: 0;
@@ -123,8 +124,14 @@
       &:first-of-type {
         padding-left: 8px;
 
+        a {
+          align-self: start;
+          height: 113px;
+        }
+
         .image {
-          width: 230px;
+          width: 250px;
+          height: 113px;
         }
 
         .paintings {
