@@ -38,7 +38,7 @@ const PaintingsPart1 = async ({ lng }: Props) => {
           style={{ objectFit: 'cover' }}
           loading="eager"
           lng={lng}
-          isSold={false}
+          isSold={true}
           href="https://www.myminiauction.com/rickrollersauctions#item-138243"
         />
         <PaintingWrapper
@@ -49,7 +49,7 @@ const PaintingsPart1 = async ({ lng }: Props) => {
           style={{ objectFit: 'cover' }}
           loading="eager"
           lng={lng}
-          isSold={false}
+          isSold={true}
           href="https://www.myminiauction.com/rickrollersauctions#item-138244"
         />
         <PaintingWrapper
@@ -60,7 +60,7 @@ const PaintingsPart1 = async ({ lng }: Props) => {
           style={{ objectFit: 'cover' }}
           loading="eager"
           lng={lng}
-          isSold={false}
+          isSold={true}
           href="https://www.myminiauction.com/rickrollersauctions#item-138245"
         />
       </div>

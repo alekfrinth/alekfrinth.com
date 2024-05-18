@@ -48,7 +48,7 @@ const PaintingsPart2 = async ({ lng }: Props) => {
           height={188}
           loading="eager"
           lng={lng}
-          isSold={false}
+          isSold={true}
           href="https://www.myminiauction.com/rickrollersauctions#item-138246"
         />
         <PaintingWrapper
@@ -58,7 +58,7 @@ const PaintingsPart2 = async ({ lng }: Props) => {
           height={188}
           loading="eager"
           lng={lng}
-          isSold={false}
+          isSold={true}
           href="https://www.myminiauction.com/rickrollersauctions#item-138247"
         />
         <PaintingWrapper
@@ -68,7 +68,7 @@ const PaintingsPart2 = async ({ lng }: Props) => {
           height={262}
           loading="eager"
           lng={lng}
-          isSold={false}
+          isSold={true}
           href="https://www.myminiauction.com/rickrollersauctions#item-138248"
         />
       </div>
