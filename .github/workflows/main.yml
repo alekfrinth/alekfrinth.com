@@ -79,7 +79,7 @@ jobs:
         # This step builds the Next.js application.
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
         # This step uploads the build artifacts to GitHub Pages.
