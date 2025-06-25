@@ -1,33 +1,27 @@
 # Author: Vladyslav Marchenko
 
 name: Deploy Next.js site to Pages
-# This is the name of the workflow, which is displayed in the GitHub Actions UI.
 
 on:
   push:
     branches: ["main"]
   workflow_dispatch:
-# This specifies when the workflow should run. In this case, it runs on 'push' events to the 'main' branch and can also be manually triggered with 'workflow_dispatch'.
 
 permissions:
   contents: read
   pages: write
   id-token: write
-# These permissions define what the workflow can access and do. It has read access to contents and write access to pages and id-token.
 
 concurrency:
   group: "pages"
   cancel-in-progress: false
-# Concurrency settings help manage multiple workflow runs. It's part of a group named "pages," and it won't cancel a run if another one is in progress.
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    # This specifies that the job will run on the latest version of Ubuntu.
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-        # This step checks out the repository code.
+        uses: actions/checkout@v4
 
       - name: Detect package manager
         id: detect-package-manager
@@ -46,21 +40,22 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
-        # This step detects the package manager (Yarn or npm) used in the project and sets up corresponding commands.
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: "lts/*"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-        # This step sets up Node.js based on the LTS version and caches the package manager to speed up future runs.
 
       - name: Setup Pages
-        uses: actions/configure-pages@v3
-        # This step configures GitHub Pages settings.
+        uses: actions/configure-pages@v4
+        with:
+          # Automatically inject basePath in your Next.js configuration file and disable
+          # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
+          static_site_generator: next
 
       - name: Restore cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: |
             .next/cache
@@ -68,21 +63,17 @@ jobs:
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
-        # This step restores cached files to speed up the workflow, based on changes to package-lock or yarn.lock files.
 
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-        # This step installs project dependencies using the detected package manager.
 
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
-        # This step builds the Next.js application.
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./out
-        # This step uploads the build artifacts to GitHub Pages.
 
   deploy:
     environment:
@@ -90,12 +81,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
-    # This 'deploy' job runs on Ubuntu, and it depends on the 'build' job.
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
-        # This step deploys the site to GitHub Pages.
+        uses: actions/deploy-pages@v4
 
   purge-cache:
     needs: [deploy]
@@ -108,4 +97,3 @@ jobs:
                           -H "Authorization: Bearer ${{ secrets.CLOUDFLAREPURGETOKEN }}" \
                           -H "Content-Type: application/json" \
                           --data '{"purge_everything":true}' | jq '.success'
-
